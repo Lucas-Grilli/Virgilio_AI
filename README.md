@@ -20,6 +20,12 @@ Poi chiudi la chat. Ne apri una nuova, giorni dopo:
 
 Non gli hai raccontato niente. L'ha letto.
 
+Se preferisci vederlo invece di leggerlo:
+
+https://github.com/user-attachments/assets/1faade89-dc36-4858-a84f-c6faab796d16
+
+Chiedo lo stato, lavoro, apro un'altra chat: è già aggiornata. Non gli è stato detto niente.
+
 ---
 
 ## Cos'è, concretamente
