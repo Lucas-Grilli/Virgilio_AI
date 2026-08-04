@@ -16,11 +16,13 @@ Installi il sistema, apri una conversazione e scrivi "ciao". Ti fa 3+1 domande, 
 
 Poi chiudi la chat. Ne apri una nuova, giorni dopo:
 
-![Una sessione nuova che sa già a che punto sei](assets/prova-memoria.png)
+<img width="1184" height="818" alt="Screenshot 2026-07-30 181334" src="https://github.com/user-attachments/assets/10c66b4d-1f7b-470f-88ef-80127af1d8f3" />
 
 Non gli hai raccontato niente. L'ha letto.
 
-Se preferisci vederlo invece di leggerlo: [guarda la demo su Loom](https://www.loom.com/share/5882d3319ed94280b1cd8c8656bc938a).
+Se preferisci vederlo invece di leggerlo: 
+
+https://github.com/user-attachments/assets/642fb1fc-8dc7-4bd9-8340-265596c3a9b4
 
 Chiedo lo stato, lo cambio, apro un'altra chat: è già aggiornata. Non gliel'ho detto io.
 
