@@ -12,7 +12,7 @@ Virgilio è la cartella che **l'AI legge da sola**, prima di rispondere, in ogni
 
 ## La prova
 
-Installi il sistema, apri una conversazione e scrivi "ciao". Ti fa tre domande, compila lo stato, e sei operativo.
+Installi il sistema, apri una conversazione e scrivi "ciao". Ti fa 3+1 domande, compila lo stato, e sei operativo.
 
 Poi chiudi la chat. Ne apri una nuova, giorni dopo:
 
@@ -20,11 +20,9 @@ Poi chiudi la chat. Ne apri una nuova, giorni dopo:
 
 Non gli hai raccontato niente. L'ha letto.
 
-Se preferisci vederlo invece di leggerlo:
+Se preferisci vederlo invece di leggerlo: [guarda la demo su Loom](https://www.loom.com/share/5882d3319ed94280b1cd8c8656bc938a).
 
-https://github.com/user-attachments/assets/1faade89-dc36-4858-a84f-c6faab796d16
-
-Chiedo lo stato, lavoro, apro un'altra chat: è già aggiornata. Non gli è stato detto niente.
+Chiedo lo stato, lo cambio, apro un'altra chat: è già aggiornata. Non gliel'ho detto io.
 
 ---
 
@@ -50,7 +48,7 @@ La regola che tiene insieme tutto: **le regole non contengono mai stato.** Un fi
 2. Collegala al tuo assistente (in Claude: selezionala come cartella di lavoro).
 3. Apri una conversazione e scrivi qualsiasi cosa.
 
-Il sistema si accorge da solo di essere vuoto e ti fa tre domande. Da lì è operativo.
+Il sistema si accorge da solo di essere vuoto e ti fa 3+1 domande. Da lì è operativo.
 
 Le procedure in `03_skills/` funzionano meglio se le carichi come skill (Impostazioni → Skills, un file alla volta): così si attivano da sole quando servono. L'assistente te lo propone durante il primo avvio.
 
@@ -76,8 +74,8 @@ archive.md           decisioni superate
 
 | Procedura | Cosa fa | Beneficio |
 |---|---|---|
-| Onboarding | Si attiva da sola al primo avvio: tre domande, compila `memory.md`, apre il primo progetto. | Da cartella vuota a sistema operativo in pochi minuti, senza leggere una riga di documentazione. |
-| Bibliotecario | Trasforma gli appunti grezzi in `01_raw/` in note atomiche collegate nel wiki, aggiorna gli indici. | L'accumulo caotico smette di essere peso morto e diventa conoscenza richiamabile. |
+| Onboarding | Si attiva da sola al primo avvio: 3+1 domande, compila `memory.md`, apre il primo progetto. | Da cartella vuota a sistema operativo in pochi minuti, senza leggere una riga di documentazione. |
+| Bibliotecario | Smista il materiale grezzo in `01_raw/`: note atomiche nel wiki per la conoscenza, cartelle e stato in `10_projects/` per i progetti. | Ci butti dentro tutto com'è, senza dividerlo: quello che rileggerai diventa conoscenza, quello su cui lavori diventa progetto. |
 | Kick-off Progetto | Apre un progetto nuovo: cartella, regole, stato, voce in indice. | Nessun filone di lavoro nasce orfano o si perde perché non indicizzato. |
 | Knowledge Pill | Distilla una competenza ricorrente in un file operativo da richiamare al bisogno. | Una competenza spiegata una volta sola, richiamabile per sempre: non la rispieghi mai più. |
 | Pulizia Sistema | Controlla link rotti, file orfani, path stale, naming e date disallineate. | Il sistema resta affidabile nel tempo invece di degradare in silenzio finché non lo scopri per caso. |

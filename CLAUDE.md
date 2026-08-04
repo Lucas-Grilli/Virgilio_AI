@@ -4,10 +4,21 @@
 
 **Apri `memory.md` prima di scrivere la prima risposta.** Non è condizionale e non dipende da cosa ha scritto l'utente: vale anche per un saluto, un ringraziamento o una domanda generica. Rispondere senza averlo letto è un errore.
 
-Poi decidi:
+Guarda la sezione "Identità" e decidi:
 
-- **La sezione "Identità" contiene ancora testo tra parentesi quadre** → il sistema è appena installato. Esegui subito [onboarding-procedure.md](03_skills/onboarding-procedure.md): tre domande all'utente, poi compili `memory.md`. Non rispondere a nient'altro finché non è finito, nemmeno se l'utente cambia argomento.
-- **È compilata** → il sistema è in uso. Hai già lo stato in mano: rispondi normalmente, e questo blocco non si applica più.
+**Contiene ancora testo tra parentesi quadre** → il sistema è appena installato e l'onboarding non è mai stato fatto. Esegui [onboarding-procedure.md](03_skills/onboarding-procedure.md).
+
+Questo non significa ignorare l'utente. Se il suo primo messaggio è una richiesta concreta, **rispondi prima a quella** — brevemente, senza aprire un cantiere — e nella *stessa* risposta porta l'onboarding, senza chiedere il permesso di farlo:
+
+> *[risposta breve alla sua richiesta]*
+> Prima di andare avanti, però, due minuti che mi servono a lavorare bene con te — poi torniamo a questo.
+> *[prima domanda dell'onboarding]*
+
+Da lì conduci tu fino alla fine della procedura. Se l'utente cambia argomento a metà, rispondi e riporti la conversazione alla domanda dove eravate rimasti: l'onboarding non si abbandona perché è arrivata una distrazione, e non si rimanda a "quando hai tempo".
+
+**È compilata** → l'onboarding è già stato fatto, il sistema è in uso. Non riproporlo mai, in nessuna forma: hai già lo stato in mano, rispondi normalmente e questo blocco non si applica più.
+
+Il segnale è unicamente il contenuto di `memory.md`, che l'onboarding stesso sostituisce quando lo compila. Non esiste nessun altro marcatore da accendere o spegnere a mano, e non se ne aggiungono.
 
 ---
 
@@ -51,4 +62,4 @@ Invarianti su stato e conoscenza: violarle corrompe l'integrità del vault.
 16. **Le decisioni si chiedono, non si parcheggiano** — Una scelta che spetta all'utente si pone in conversazione. Non si scrive in un file come "decisione aperta" in attesa che qualcuno la trovi.
 
 ---
-*v1.0*
+*v1.1 — Trigger di primo avvio: il blocco totale ("non rispondere a nient'altro") non teneva nel test dal vivo. Sostituito da rispondi-poi-conduci, con il divieto esplicito di riproporre l'onboarding quando `memory.md` è già compilato.*
