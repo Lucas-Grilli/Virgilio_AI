@@ -1,6 +1,6 @@
 # knowledge pills — indice
 
-> Competenze distillate in file operativi densi, da richiamare in una sessione quando servono. Si creano con `03_skills/knowledge-pill-procedure.md`.
+> Competenze distillate in file operativi densi, da richiamare in una sessione quando servono. Si creano con `03_skills/knowledge-pill/SKILL.md`.
 
 ## Pillole
 

@@ -76,21 +76,21 @@ Se dice di sì, allora — e solo allora — nomina le cartelle e cosa fa ognuna
 Questo passaggio non è opzionale: a questo punto l'utente ha risposto a quattro domande e visto un file compilato, ma non sa ancora cosa ci guadagna. Se glielo lasci chiedere, l'hai già perso.
 
 ### 7. Apri il primo progetto
-Se l'utente ha citato almeno un progetto, esegui `project-kickoff-procedure.md` per quello. Se ne ha citati più di uno, chiedi da quale partire invece di deciderlo tu.
+Se l'utente ha citato almeno un progetto, esegui `project-kickoff/SKILL.md` per quello. Se ne ha citati più di uno, chiedi da quale partire invece di deciderlo tu.
 
-### 8. Installa le skill
-Le procedure in `03_skills/` si attivano da sole solo dopo essere state registrate come skill. **Prova a installarle tu**, se lo strumento per farlo è disponibile in questo ambiente — verifica prima quali risultano già presenti, per non duplicarle:
+### 8. Le skill: già pronte, o da installare a mano
+Se sei su Claude Code, le sei skill sono già attive: `.claude/skills/` ne contiene una copia pronta all'uso, non serve fare niente. Se non sei sicuro di essere su Claude Code, verificalo con il meccanismo di discovery delle skill invece di dedurlo.
 
-- `bibliotecario-procedure.md` — prende il materiale grezzo che l'utente butta dentro e lo trasforma in conoscenza ordinata e in progetti.
-- `project-kickoff-procedure.md` — apre i prossimi progetti.
-- `knowledge-pill-procedure.md` — distilla una competenza ricorrente in un file da richiamare.
-- `pulizia-sistema-procedure.md` — controlla che il sistema non si sia rotto.
-- `dump-sessione-procedure.md` — chiude una sessione registrando cosa è emerso.
-- `feedback-sistema-procedure.md` — registra i problemi del sistema stesso.
+Se non lo sei (claude.ai, app), dillo chiaramente all'utente e proponi di installarle: apri il file `SKILL.md` dentro ciascuna delle sei cartelle in `03_skills/` (tutte tranne questa), copiane il contenuto, e incollalo in Impostazioni → Competenze → "Scrivi le istruzioni della skill". Una volta sola, una skill alla volta:
 
-Se non puoi installarle da qui, dillo chiaramente e spiega come farlo: impostazioni dell'assistente, sezione Skills, caricare questi file uno alla volta. Una volta sola.
+- `bibliotecario/` — prende il materiale grezzo che l'utente butta dentro e lo trasforma in conoscenza ordinata e in progetti.
+- `project-kickoff/` — apre i prossimi progetti.
+- `knowledge-pill/` — distilla una competenza ricorrente in un file da richiamare.
+- `pulizia-sistema/` — controlla che il sistema non si sia rotto.
+- `dump-sessione/` — chiude una sessione registrando cosa è emerso.
+- `feedback-sistema/` — registra i problemi del sistema stesso.
 
-Le procedure restano comunque file leggibili e modificabili: chi ne cambia una aggiorna la copia attiva ricaricandola.
+Le procedure restano comunque file leggibili e modificabili in `03_skills/`, che è la fonte: chi ne cambia una su Claude Code deve poi ricopiarla anche in `.claude/skills/` (non è collegata in automatico), su claude.ai/app la ricarica dalle impostazioni.
 
 ### 9. Provoca la prova
 Chiudi dicendo all'utente di chiudere questa conversazione, aprirne una nuova sulla stessa cartella e chiedere "dove eravamo". È l'unica dimostrazione che conta: in una sessione nuova, senza contesto, l'assistente sa già chi è e su cosa sta lavorando.

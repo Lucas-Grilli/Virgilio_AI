@@ -1,5 +1,5 @@
 ---
-name: Bibliotecario
+name: bibliotecario
 description: Smista il materiale grezzo in 01_raw/ tra conoscenza e progetti - crea note atomiche nel wiki, apre o alimenta le cartelle di progetto, aggiorna gli indici e archivia gli originali. Usare per "fai il bibliotecario", "svuota la inbox", "processa i raw", "ho buttato dentro della roba".
 ---
 
@@ -91,7 +91,7 @@ La sezione Connessioni si mette solo se esistono davvero note a cui questa si le
 ### 6. Costruisci o alimenta i progetti
 Sul materiale finito nel mucchio "progetto". Per ogni progetto riconosciuto nel materiale grezzo:
 
-**Il progetto non esiste ancora** → esegui `project-kickoff-procedure.md`, che crea la cartella, le regole, il file di stato, la riga in tabella e la voce nell'indice. Non improvvisare una struttura di cartelle tua: la procedura di kick-off esiste per questo, e garantisce che il progetto nasca raggiungibile invece che orfano.
+**Il progetto non esiste ancora** → esegui `project-kickoff/SKILL.md`, che crea la cartella, le regole, il file di stato, la riga in tabella e la voce nell'indice. Non improvvisare una struttura di cartelle tua: la procedura di kick-off esiste per questo, e garantisce che il progetto nasca raggiungibile invece che orfano.
 
 Poi versa il materiale nella cartella appena creata: quello che descrive lo stato attuale va nel `memory.md` del progetto, i documenti veri e propri restano come file dentro la cartella.
 

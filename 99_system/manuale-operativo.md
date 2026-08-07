@@ -28,7 +28,7 @@ Root contiene solo governo: nessun lavoro operativo. Ogni progetto in `10_projec
 |---|---|---|
 | `CLAUDE.md` | regole, router, perimetro | quasi mai |
 | `memory.md` | stato attuale, thread aperti, prossimo passo | sempre |
-| `archive.md` | ciò che è stato sostituito, con data | solo aggiunte |
+| `archive.md` | ciò che è stato sostituito, con data | solo aggiunte, in cima |
 
 - Le regole non contengono stato: se un'affermazione può scadere, va in `memory.md` e il router la referenzia.
 - `archive.md` riceve solo informazioni che escono da un `memory.md` perché sostituite. Non è un log di manutenzione.

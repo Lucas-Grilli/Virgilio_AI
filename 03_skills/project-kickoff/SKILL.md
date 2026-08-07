@@ -1,5 +1,5 @@
 ---
-name: Kick-off Progetto
+name: project-kickoff
 description: Apre un progetto nuovo nel secondo cervello: cartella, regole, file di stato, riga in tabella e voce nell'indice. Usare quando si vuole iniziare un nuovo progetto o filone di lavoro.
 ---
 

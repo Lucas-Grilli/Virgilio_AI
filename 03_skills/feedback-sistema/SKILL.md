@@ -1,5 +1,5 @@
 ---
-name: Feedback Sistema
+name: feedback-sistema
 description: Scrive subito nel registro dei problemi strutturali quando l'utente si lamenta di regole, indici o convenzioni del secondo cervello, e corregge la regola alla fonte.
 ---
 
@@ -15,7 +15,7 @@ Riconosce un reclamo o una correzione dell'utente sulla struttura/meccanica del 
 
 **Prerequisiti:**
 - Nessun framework di riferimento necessario.
-- Saper distinguere il reclamo dal caso dump — v. `CLAUDE.md` Regola 13 e header di `feedback_secondo_cervello.md`.
+- Saper distinguere il reclamo dal caso dump — v. `CLAUDE.md` Regola 14 e header di `feedback_secondo_cervello.md`.
 
 ## Passaggi
 

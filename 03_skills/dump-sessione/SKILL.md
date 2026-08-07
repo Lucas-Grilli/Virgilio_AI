@@ -1,5 +1,5 @@
 ---
-name: Dump Sessione
+name: dump-sessione
 description: Chiude un blocco di lavoro scrivendo una voce datata nel registro di automiglioramento. Usare per "dumpamelo", "fai il dump", "chiudi la sessione", "riassumi cosa abbiamo fatto".
 ---
 
@@ -41,7 +41,7 @@ Incolla in chat le stesse righe appena scritte, senza riformattarle né espander
 ## Cose da Sapere
 - Se per costruire il recap si leggono messaggi lunghi o più file, dichiarare una stima dei token usati e segnalare se esiste un modo più economico per ottenere lo stesso risultato.
 - Un eventuale trigger automatico va validato su 2-3 usi manuali prima di essere introdotto: un trigger troppo sensibile scrive rumore nel dump (voci deboli o mal categorizzate) che l'utente deve poi ripulire a mano — il costo si sposta da "l'AI scrive troppo poco" a "l'utente deve filtrare di più".
-- Se diventa automatica, va coordinata con la Regola 13 di `CLAUDE.md` (scrittura simultanea nella memoria automatica dell'assistente), altrimenti la stessa riga rischia di essere scritta due volte.
+- Se diventa automatica, va coordinata con la Regola 14 di `CLAUDE.md` (scrittura simultanea nella memoria automatica dell'assistente), altrimenti la stessa riga rischia di essere scritta due volte.
 
 ## Log Storico
 - [2026-07-23] Creazione della procedura.

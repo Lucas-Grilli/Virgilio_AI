@@ -1,5 +1,5 @@
 ---
-name: Pulizia Sistema
+name: pulizia-sistema
 description: Controlli meccanici sul secondo cervello: link rotti, file orfani, path stale, naming non conforme, date non propagate. Usare per "controlla il sistema", "fai pulizia", "verifica il vault".
 ---
 

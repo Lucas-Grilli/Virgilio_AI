@@ -1,5 +1,5 @@
 ---
-name: Knowledge Pill
+name: knowledge-pill
 description: Distilla una competenza ricorrente in un file operativo denso da richiamare quando serve, salvato in 00_context/knowledge_pills/. Usare per "fammi una pillola su X", "crea una cartuccia".
 ---
 
@@ -66,7 +66,7 @@ Chiudi dicendo all'utente la frase esatta con cui richiamarla in una sessione fu
 ## Cose da Sapere
 - Una pillola sostituisce un ragionamento ripetuto, non un documento di riferimento. Se supera le due o tre pagine, probabilmente sono due pillole.
 - Le pillole invecchiano: quando una viene usata e si rivela imprecisa, si corregge subito invece di aggirarla nella conversazione.
-- **L'attivazione non è mai automatica.** Una pillola non si autoinvoca: resta muta finché l'utente (o una skill che la richiama esplicitamente) non chiede di leggerla e applicarla. Se durante una conversazione si nota un pattern ripetuto che meriterebbe una pillola (esistente o nuova), è proattività di conversazione (Regola 8 di CLAUDE.md) — non un meccanismo della pillola stessa.
+- **L'attivazione non è mai automatica.** Una pillola non si autoinvoca: resta muta finché l'utente (o una skill che la richiama esplicitamente) non chiede di leggerla e applicarla. Se durante una conversazione si nota un pattern ripetuto che meriterebbe una pillola (esistente o nuova), è proattività di conversazione (Regola 9 di CLAUDE.md) — non un meccanismo della pillola stessa.
 
 ## Log Storico
 - [2026-07-26] Creazione della procedura.
