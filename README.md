@@ -37,7 +37,9 @@ Poi chiudi la chat. Ne apri una nuova, giorni dopo:
 
 Non gli hai raccontato niente. L'ha letto.
 
-Se preferisci vederlo invece di leggerlo: [guarda la demo](assets/VirgilioAI-v1.0.mp4).
+Se preferisci vederlo invece di leggerlo:
+
+https://github.com/user-attachments/assets/642fb1fc-8dc7-4bd9-8340-265596c3a9b4
 
 Chiedo lo stato, lo cambio, apro un'altra chat: è già aggiornata. Non gliel'ho detto io.
 
