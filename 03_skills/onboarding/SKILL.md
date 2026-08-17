@@ -86,9 +86,9 @@ Se non lo sei (claude.ai, app), dillo chiaramente all'utente e proponi di instal
 - `bibliotecario/` — prende il materiale grezzo che l'utente butta dentro e lo trasforma in conoscenza ordinata e in progetti.
 - `project-kickoff/` — apre i prossimi progetti.
 - `knowledge-pill/` — distilla una competenza ricorrente in un file da richiamare.
+- `specializzazione/` — va a cercare fuori l'evidenza su un tema, invece di rispondere di intuito.
 - `pulizia-sistema/` — controlla che il sistema non si sia rotto.
 - `dump-sessione/` — chiude una sessione registrando cosa è emerso.
-- `feedback-sistema/` — registra i problemi del sistema stesso.
 
 Le procedure restano comunque file leggibili e modificabili in `03_skills/`, che è la fonte: chi ne cambia una su Claude Code deve poi ricopiarla anche in `.claude/skills/` (non è collegata in automatico), su claude.ai/app la ricarica dalle impostazioni.
 

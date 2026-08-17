@@ -111,9 +111,9 @@ archive.md           decisioni superate
 | Bibliotecario | Smista il materiale grezzo in `01_raw/`: note atomiche nel wiki per la conoscenza, cartelle e stato in `10_projects/` per i progetti. | Ci butti dentro tutto com'è, senza dividerlo: quello che rileggerai diventa conoscenza, quello su cui lavori diventa progetto. |
 | Kick-off Progetto | Apre un progetto nuovo: cartella, regole, stato, voce in indice. | Nessun filone di lavoro nasce orfano o si perde perché non indicizzato. |
 | Knowledge Pill | Distilla una competenza ricorrente in un file operativo da richiamare al bisogno. | Una competenza spiegata una volta sola, richiamabile per sempre: non la rispieghi mai più. |
-| Pulizia Sistema | Controlla link rotti, file orfani, path stale, naming e date disallineate. | Il sistema resta affidabile nel tempo invece di degradare in silenzio finché non lo scopri per caso. |
+| Specializzazione | Prima di assisterti su un tema con letteratura propria, va a cercare l'evidenza e la distilla in una pillola. | Su ciò che conta non ti risponde d'istinto: prima si documenta, e quello che impara resta scritto. |
+| Pulizia Sistema | Controlla link rotti, file orfani, path stale, naming e date disallineate, e a cadenza periodica anche duplicazioni e regole scollate dalla pratica. | Il sistema resta affidabile nel tempo invece di degradare in silenzio finché non lo scopri per caso. |
 | Dump Sessione | Chiude una sessione di lavoro con una voce datata nel registro. | Decisioni e correzioni non spariscono quando chiudi la chat: restano scritte, non affidate alla memoria. |
-| Feedback Sistema | Corregge alla fonte una regola quando segnali un problema strutturale. | Il sistema impara dai tuoi correttivi nella stessa interazione, invece di farteli ripetere la settimana dopo. |
 
 L'onboarding parte da sola al primo messaggio. Le altre sei sono cartelle skill (`<nome>/SKILL.md`): su Claude Code si attivano da sole quando il contesto lo richiede, altrove si installano una alla volta dalle impostazioni.
 
@@ -150,6 +150,7 @@ Non compete sulla quantità di cose che ricorda: compete su cosa puoi vedere, co
 - **Comprimere, non accumulare** — ogni sessione di lavoro chiude con 1-2 righe dense nel registro, non con la cronologia intera della chat.
 - **Pulizia ricorrente** — link rotti, file orfani, path superati: un controllo dedicato li intercetta prima che si accumulino in silenzio.
 - **Stato, regole e storico separati** — cosa è vero ora (`memory.md`), cosa è vero sempre (`CLAUDE.md`), cosa non è più vero (`archive.md`) non si mescolano mai.
+- **Una correzione cambia la regola, non solo il registro** — quando segnali un problema strutturale, l'assistente lo scrive *e* riscrive la regola alla fonte nella stessa interazione. Un log che non cambia niente fa ripetere lo stesso reclamo la settimana dopo.
 
 ---
 
