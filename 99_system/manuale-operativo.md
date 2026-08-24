@@ -15,12 +15,17 @@ sistema/
 ├── 00_context/          ← identità e materiale personale
 ├── 01_raw/              ← inbox grezza (+ _processed/)
 ├── 02_wiki/             ← conoscenza consolidata
-├── 03_skills/           ← procedure e skill
+├── 03_skills/           ← skill globali, divise in atomiche/ e flusso/
 ├── 10_projects/         ← progetti
 └── 99_system/           ← manuali, template, feedback di sistema
 ```
 
 Root contiene solo governo: nessun lavoro operativo. Ogni progetto in `10_projects/` replica il pattern dei tre file di governo.
+
+**Progetto o skill?** Due nature diverse, e confonderle è l'errore che costa di più:
+
+- **Progetto** — ha un traguardo con cui si misura il successo, e finisce. Vive in `10_projects/`.
+- **Skill** — l'esecuzione: un'operazione ripetibile che qualcuno invoca. Vive in `03_skills/`.
 
 ## 2. I tre file di governo
 
@@ -28,7 +33,7 @@ Root contiene solo governo: nessun lavoro operativo. Ogni progetto in `10_projec
 |---|---|---|
 | `CLAUDE.md` | regole, router, perimetro | quasi mai |
 | `memory.md` | stato attuale, thread aperti, prossimo passo | sempre |
-| `archive.md` | ciò che è stato sostituito, con data | solo aggiunte, in cima |
+| `archive.md` | ciò che è stato sostituito, con data | solo aggiunte |
 
 - Le regole non contengono stato: se un'affermazione può scadere, va in `memory.md` e il router la referenzia.
 - `archive.md` riceve solo informazioni che escono da un `memory.md` perché sostituite. Non è un log di manutenzione.
@@ -76,18 +81,32 @@ Ordine di costo crescente: router → ricerca mirata → lettura parziale → le
 | Framework o metodo riutilizzabile ovunque | `00_context/` |
 | Materiale specifico di un progetto | `10_projects/<progetto>/resources/` o `inputs/` |
 | Deliverable finito | `10_projects/<progetto>/outputs/` |
-| Procedura eseguibile globale | `03_skills/` |
+| Operazione ripetibile senza decisioni dentro | `03_skills/atomiche/<nome>/` |
+| Sequenza che ordina il lavoro e finisce in un verdetto | `03_skills/flusso/<nome>/` |
+| Idea su cui non hai ancora lavorato | thread aperto in `memory.md`. Una cartella progetto nasce quando il lavoro inizia, non quando l'idea arriva |
 | Procedura eseguibile di un solo progetto | cartella locale del progetto |
+| Metodo per parlare con un servizio esterno | la guida delle connessioni esterne, in `99_system/` |
 | Promemoria, cosa-da-fare | thread aperto in `memory.md`. Mai un file vuoto su disco |
 | Decisione presa, stato cambiato | `memory.md` del livello giusto (+ `archive.md` se sostituisce) |
 
 Test di ammissione al wiki: "resta utile se cambio progetto o cliente?" Sì → `02_wiki/`. No → resta materiale del progetto.
 
-## 9. Procedure e skill
+## 9. Skill
 
-- **Procedura (`.md`):** si modifica direttamente, effetto immediato alla lettura successiva. Va usata di default.
-- **Skill impacchettata:** la copia che si attiva è installata separatamente dal sorgente. Modificare il sorgente non aggiorna la copia installata: serve una reinstallazione esplicita. Un fix non reinstallato non esiste.
-- Ciclo di aggiornamento di una skill: modifica sorgente → aggiorna changelog in testa → reinstalla → verifica che la versione attesa compaia alla prima esecuzione.
+**Ogni skill nasce dichiarando la propria natura**, prima che venga scritta una riga:
+
+- **Atomica** — un ingresso, un'uscita, nessuna decisione dentro. Non sa niente del contesto in cui gira, quindi è richiamabile da qualunque flusso. Porta dentro di sé le regole del proprio mestiere (limiti di spesa, parametri, controlli), così chi la usa non deve ricordarsele.
+- **Di flusso** — una sequenza che ordina il lavoro e lo consegna a un verdetto dell'utente. Il suo valore è l'ordine e i cancelli, non il lavoro: punta alle atomiche invece di rispiegare come si fa ogni passaggio.
+
+Vive nella cartella corrispondente, `03_skills/atomiche/` o `03_skills/flusso/`, come cartella `<nome>/` con dentro `SKILL.md`.
+
+**Criterio d'ingresso per una nuova atomica:** l'operazione è già stata fatta a mano almeno due volte, oppure porta una regola che, dimenticata, costa soldi o danni. Il secondo caso è il più importante: una regola che dipende dal ricordarsela non regge, va agganciata al passaggio che la esegue — e per un'operazione ripetibile quel passaggio è la skill.
+
+**La descrizione è ciò che la fa partire**, non il nome: deve contenere le parole che l'utente usa nel momento del bisogno, non il nome tecnico di cosa fa.
+
+**Installazione.** `03_skills/` è la fonte leggibile e modificabile; `.claude/skills/` è la posizione da cui l'assistente scopre le skill, e resta **piatta** anche quando la fonte è divisa in atomiche e flusso. Le due non sono collegate in automatico: dopo aver modificato una skill, la copia gemella va riallineata, altrimenti gira ancora la versione vecchia. Vale la regola che un fix non propagato non esiste.
+
+**Procedura in incubazione.** Un metodo che ha già una forma ma non ha ancora superato il criterio d'ingresso vive come cartella `<nome>/` alla radice di `03_skills/`, fuori da entrambe. Diventa skill quando il criterio è soddisfatto, dichiarando la natura.
 
 ## 10. Glossario
 
@@ -97,4 +116,8 @@ Test di ammissione al wiki: "resta utile se cambio progetto o cliente?" Sì → 
 | Propagazione | Portare un evento al livello giusto: micro → progetto, macro → root |
 | Nota atomica | Un concetto, un file, con fonte citata e collegamenti |
 | Macro / micro | Eventi che cambiano lo stato generale / dettagli interni a un progetto |
-| Deploy di una skill | Reinstallare dopo aver modificato il sorgente |
+| Skill atomica | Un ingresso, un'uscita, nessuna decisione dentro: richiamabile da qualunque flusso |
+| Skill di flusso | Una sequenza con cancelli, che finisce in un verdetto dell'utente |
+
+---
+*v1.1 — §1: `03_skills/` divisa in atomiche/flusso, e la distinzione progetto/skill come prima cosa da stabilire. §8: destinazioni per skill atomica, skill di flusso e connessioni esterne; l'idea su cui non si è ancora lavorato non prende una cartella. §9 riscritta da capo: la natura della skill si dichiara prima di scriverla, criterio d'ingresso, la descrizione come innesco, e il modello sorgente/copia gemella reso esplicito. Glossario esteso.*

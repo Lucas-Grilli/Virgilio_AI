@@ -6,7 +6,7 @@
 
 Guarda la sezione "Identità" e decidi:
 
-**Contiene ancora testo tra parentesi quadre** → il sistema è appena installato e l'onboarding non è mai stato fatto. Esegui [onboarding/SKILL.md](03_skills/onboarding/SKILL.md).
+**Contiene ancora testo tra parentesi quadre** → il sistema è appena installato e l'onboarding non è mai stato fatto. Esegui [onboarding/SKILL.md](03_skills/flusso/onboarding/SKILL.md).
 
 Questo non significa ignorare l'utente. Se il suo primo messaggio è una richiesta concreta, **rispondi prima a quella** — brevemente, senza aprire un cantiere — e nella *stessa* risposta porta l'onboarding, senza chiedere il permesso di farlo:
 
@@ -33,7 +33,7 @@ Da qui si raggiunge ogni cosa: Router → index di cartella → file.
 - Identità e materiale personale → [context_index.md](00_context/context_index.md)
 - Inbox grezza → [raw_index.md](01_raw/raw_index.md)
 - Conoscenza di dominio → [wiki_index.md](02_wiki/wiki_index.md)
-- Procedure e skill → [skills_index.md](03_skills/skills_index.md)
+- Skill globali, divise in atomiche e di flusso → [skills_index.md](03_skills/skills_index.md)
 - Progetti → [projects_index.md](10_projects/projects_index.md)
 - Regole del sistema, template, feedback sul sistema → [system_index.md](99_system/system_index.md)
 
@@ -64,8 +64,11 @@ Invarianti su stato e conoscenza: violarle corrompe l'integrità del vault.
 18. **Fail-closed** — Quando manca l'informazione per agire con sicurezza (stato ambiguo, permesso non chiaro, dato non verificato), ci si ferma e si chiede invece di indovinare. Etichetta esplicita per le Regole 10, 11 e 12: nel dubbio, l'azione di default è non agire.
 19. **Test a freddo dopo ogni modifica strutturale** — Una modifica alla struttura del sistema (cartelle, formato delle skill, router) si considera conclusa solo dopo un test a freddo: sessione nuova, nessun contesto residuo, verifica che il sistema si comporti come atteso. Non si segna un lavoro strutturale come finito sulla fiducia.
 20. **Nessuna azione esterna irreversibile senza conferma** — Push, pubblicazione, apertura o modifica di issue/PR sul repository di questo sistema richiedono conferma esplicita dell'utente prima di essere eseguiti, anche quando la richiesta iniziale sembrava già autorizzarli implicitamente.
+21. **Natura di una skill** — Una skill nuova nasce dichiarando cosa è: *atomica* (un ingresso, un'uscita, nessuna decisione dentro, richiamabile da altri flussi) o *di flusso* (una sequenza che ordina il lavoro e lo consegna a un verdetto dell'utente). Vive nella cartella corrispondente, `03_skills/atomiche/` o `03_skills/flusso/`. Il criterio completo e quello d'ingresso vivono in [skills_index.md](03_skills/skills_index.md). Nessuna skill si scrive prima di aver detto quale delle due è. Un'atomica porta dentro di sé le regole del proprio mestiere (limiti di spesa, parametri, controlli); una di flusso punta alle atomiche invece di rispiegare come si fa ogni passaggio.
+22. **Connessione a servizi esterni** — Prima di scrivere una nuova integrazione (script su API, scraping, browser automation) verso un servizio esterno, consultare [connessioni-esterne.md](99_system/connessioni-esterne.md): se il servizio è già mappato, si usa il metodo lì indicato invece di deciderne uno nuovo. Un metodo nuovo, una volta provato e corretto, si scrive lì nella stessa sessione — specialmente dopo un errore che è costato soldi.
 
 ---
+*v1.4 — Aggiunte Regole 21 (natura di una skill) e 22 (connessione a servizi esterni). `03_skills/` era una rastrelliera piatta senza distinzione di natura: conseguenza, le regole dei singoli mestieri finivano nei file di feedback invece che dentro lo strumento che le esegue. Cartella divisa in `atomiche/` e `flusso/` con criterio d'ingresso esplicito; `.claude/skills/` resta piatta, è la posizione di esecuzione. Nato `99_system/connessioni-esterne.md`: il metodo giusto per parlare con un servizio esterno si decide una volta e si riusa, invece di riscoprirlo a ogni progetto.*
 *v1.3 — Regole 8, 14 e 15 estese: una segnalazione non si accompagna all'esecuzione quando la decisione spetta all'utente; un feedback strutturale corregge la regola alla fonte nella stessa operazione, non solo il registro; la comunicazione diretta include il non aggiungere ciò che non è stato chiesto (la build inglese aveva già quest'ultima: gap di sincronizzazione tra le due lingue, non contenuto nuovo). Aggiunto alla Regola 1 il corollario sulla sede delle regole: una regola esiste solo se vive in un file raggiungibile dalla cascata.*
 *v1.2 — Allineata la Regola 5 ("`memory.md` contiene solo il presente") mancante rispetto alla build inglese: gap di sincronizzazione, non una modifica di contenuto. Aggiunte Regole 18-20 (fail-closed, test a freddo dopo modifiche strutturali, nessuna azione esterna irreversibile senza conferma), ispirate al file di regole del benchmark di settore.*
 *v1.1 — Trigger di primo avvio: il blocco totale ("non rispondere a nient'altro") non teneva nel test dal vivo. Sostituito da rispondi-poi-conduci, con il divieto esplicito di riproporre l'onboarding quando `memory.md` è già compilato.*

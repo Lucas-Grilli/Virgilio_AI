@@ -4,5 +4,6 @@
 > Da qui parte la cascata verso tutto ciò che sta in `99_system/`.
 
 - [[manuale-operativo]] — la specifica di correttezza del sistema: struttura, regole, convenzioni. È il riferimento che le procedure di manutenzione usano per sapere cos'è "giusto".
+- [[connessioni-esterne]] — per ogni servizio esterno già affrontato, il metodo giusto già deciso e perché. Si consulta prima di scrivere una nuova integrazione (Regola 22), si aggiorna appena se ne impara uno nuovo.
 - [[feedback_secondo_cervello]] — registro dei problemi della struttura del sistema stesso.
 - **[templates/](templates/templates_index.md)** — scheletri vuoti da copiare quando si crea un progetto, una procedura, un framework o un'ipotesi.

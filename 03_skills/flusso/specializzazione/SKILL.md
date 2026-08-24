@@ -14,11 +14,11 @@ Obiettivo: prima di assistere l'utente su un tema con letteratura propria, l'ass
 1. **Definire il gap** — elencare le 3-6 domande a cui la conoscenza di base risponderebbe con luoghi comuni. Sono quelle da verificare.
 2. **Controllo asset esistenti** — leggere `00_context/knowledge_pills/index_knowledge-pills.md`: se una pillola copre già il tema, usare quella (eventualmente aggiornandola), non crearne una doppia (Regola 4 di `CLAUDE.md`).
 3. **Ricerca mirata** — una ricerca per domanda, non generica: puntare a studi con autore e anno, meta-analisi, dimensioni dell'effetto. Preferire evidenza primaria o sintesi di evidenza a contenuti motivazionali; segnalare quando l'evidenza contraddice il senso comune — è il valore principale del giro.
-4. **Distillare in pillola** — scrivere in `00_context/knowledge_pills/`, un paragrafo per pilastro (cosa dice l'evidenza + riga "Operativo:"), sezione errori tipici, fonti linkate. Densa, non lunga. Voce nell'indice nella stessa operazione (Regola 1). Formato dettagliato: [knowledge-pill](../knowledge-pill/SKILL.md).
+4. **Distillare in pillola** — scrivere in `00_context/knowledge_pills/`, un paragrafo per pilastro (cosa dice l'evidenza + riga "Operativo:"), sezione errori tipici, fonti linkate. Densa, non lunga. Voce nell'indice nella stessa operazione (Regola 1). Formato dettagliato: [knowledge-pill](../../atomiche/knowledge-pill/SKILL.md).
 5. **Tornare in chat con una posizione** — non un riassunto della ricerca: la risposta al caso concreto alla luce dell'evidenza, incluse le correzioni a ciò che si stava per fare.
 
 ## Regole dure
 
-- Diversa da [knowledge-pill](../knowledge-pill/SKILL.md): quella distilla competenza già emersa nelle sessioni, questa la va a prendere fuori.
+- Diversa da [knowledge-pill](../../atomiche/knowledge-pill/SKILL.md): quella distilla competenza già emersa nelle sessioni, questa la va a prendere fuori.
 - Senza accesso a una ricerca esterna la skill non si esegue a memoria: si dichiara il limite e si procede dichiarando che la risposta è di intuito, non verificata.
 - L'evidenza si cita, non si evoca: una pillola senza fonti linkate non è il prodotto di questa skill.
