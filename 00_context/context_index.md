@@ -5,7 +5,7 @@
 
 ## Sottocartelle
 
-- **[knowledge_pills/](knowledge_pills/index_knowledge-pills.md)** — "cartucce": file densi e operativi su un tema, da richiamare quando serve quella competenza. Si creano con `03_skills/knowledge-pill/SKILL.md`.
+- **[knowledge_pills/](knowledge_pills/index_knowledge-pills.md)** — "cartucce": file densi e operativi su un tema, da richiamare quando serve quella competenza. Si creano con [knowledge-pill](../03_skills/atomiche/knowledge-pill/SKILL.md).
 - **dump/** — registro di automiglioramento: feedback e correzioni su come l'AI deve lavorare con te. Un file per mese (`AAAA-MM.md`).
 
 ---
