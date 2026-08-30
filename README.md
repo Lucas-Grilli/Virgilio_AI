@@ -15,8 +15,8 @@
 
 <p align="center">
   <a href="#la-prova">La prova</a> ·
-  <a href="#come-funziona">Come funziona</a> ·
   <a href="#come-si-parte">Come si parte</a> ·
+  <a href="#come-funziona">Come funziona</a> ·
   <a href="#le-procedure">Le procedure</a> ·
   <a href="#domande">Domande</a>
 </p>
@@ -42,6 +42,42 @@ Se preferisci vederlo invece di leggerlo:
 https://github.com/user-attachments/assets/642fb1fc-8dc7-4bd9-8340-265596c3a9b4
 
 Chiedo lo stato, lo cambio, apro un'altra chat: è già aggiornata. Non gliel'ho detto io.
+
+---
+
+## Come si parte
+
+Tre minuti, e non scarichi né configuri niente a mano: lo fa l'assistente.
+
+**1. Crea una cartella vuota** dove vuoi sul computer.
+
+**2. Puntaci il tuo assistente** — in Claude Code o Cowork, selezionala come cartella di lavoro.
+
+**3. Incolla questo prompt e invia:**
+
+```text
+Scarica lo zip di https://github.com/Lucas-Grilli/Virgilio_AI (branch main) ed estrai il contenuto direttamente in questa cartella. Poi cancella lo zip scaricato. Infine apri CLAUDE.md, leggi la sezione "Prima azione di ogni sessione" e seguila.
+```
+
+**4. Sei operativo.** Il sistema si accorge da solo di essere vuoto, ti fa 3+1 domande e da lì lavora con te.
+
+<p align="center"><img src="assets/install-1-cartella-vuota.png" alt="Una cartella vuota sul desktop" width="620"></p>
+
+<p align="center"><img src="assets/install-2-prompt.png" alt="Il prompt incollato nell'assistente" width="620"></p>
+
+<details>
+<summary><b>Preferisci installarlo a mano?</b></summary>
+
+Serve se lavori su claude.ai o sull'app, dove l'assistente non può scrivere in una cartella del tuo computer, o se semplicemente non vuoi dargli quel permesso.
+
+1. In cima a questa pagina, **Code → Download ZIP**.
+2. Estrai la cartella dove vuoi sul computer.
+3. Collegala al tuo assistente (in Claude: selezionala come cartella di lavoro).
+4. Apri una conversazione e scrivi qualsiasi cosa.
+
+Le procedure in `03_skills/` sono già skill pronte all'uso: su Claude Code si attivano da sole appena la cartella è quella aperta, senza nessun passaggio in più. Su altri assistenti si installano copiando il contenuto di ogni `SKILL.md` in una nuova skill dalle impostazioni — l'assistente te lo propone durante il primo avvio.
+
+</details>
 
 ---
 
@@ -72,18 +108,6 @@ La regola che tiene insieme tutto: **le regole non contengono mai stato.** Un fi
 ## Cos'è, concretamente
 
 Una cartella di file markdown. Nessun database, nessun account, nessun abbonamento, niente che giri in cloud. Si apre con qualsiasi editor, e con Obsidian si vedono anche i collegamenti in grafo.
-
----
-
-## Come si parte
-
-1. Scarica la cartella e mettila dove vuoi sul tuo computer.
-2. Collegala al tuo assistente (in Claude: selezionala come cartella di lavoro).
-3. Apri una conversazione e scrivi qualsiasi cosa.
-
-Il sistema si accorge da solo di essere vuoto e ti fa 3+1 domande. Da lì è operativo.
-
-Le procedure in `03_skills/` sono già skill pronte all'uso: su Claude Code si attivano da sole appena la cartella è quella aperta, senza nessun passaggio in più. Su altri assistenti si installano copiando il contenuto di ogni `SKILL.md` in una nuova skill dalle impostazioni — l'assistente te lo propone durante il primo avvio.
 
 ---
 
