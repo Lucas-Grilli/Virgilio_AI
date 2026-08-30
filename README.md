@@ -11,6 +11,8 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2563eb.svg" alt="Licenza MIT"></a>
+  <img src="https://img.shields.io/badge/versione-1.4-2563eb.svg" alt="Versione 1.4">
+  <img src="https://img.shields.io/badge/lingua-italiano-2563eb.svg" alt="In italiano">
 </p>
 
 <p align="center">
@@ -60,8 +62,6 @@ Scarica lo zip di https://github.com/Lucas-Grilli/Virgilio_AI (branch main) ed e
 ```
 
 **4. Sei operativo.** Il sistema si accorge da solo di essere vuoto, ti fa 3+1 domande e da lì lavora con te.
-
-<p align="center"><img src="assets/install-1-cartella-vuota.png" alt="Una cartella vuota sul desktop" width="620"></p>
 
 <p align="center"><img src="assets/install-2-prompt.png" alt="Il prompt incollato nell'assistente" width="620"></p>
 
