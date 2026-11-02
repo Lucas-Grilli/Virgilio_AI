@@ -91,6 +91,8 @@ Ordine di costo crescente: router → ricerca mirata → lettura parziale → le
 
 Test di ammissione al wiki: "resta utile se cambio progetto o cliente?" Sì → `02_wiki/`. No → resta materiale del progetto.
 
+Ogni file che l'utente vorrà ritrovare ha anche la sua riga in «Dove trovi cosa», nel `memory.md` del progetto (Regola 23 di `CLAUDE.md`): la cartella dice dove sta un file, quella sezione lo fa ritrovare senza cercarlo.
+
 ## 9. Skill
 
 **Ogni skill nasce dichiarando la propria natura**, prima che venga scritta una riga:
@@ -120,4 +122,5 @@ Vive nella cartella corrispondente, `03_skills/atomiche/` o `03_skills/flusso/`,
 | Skill di flusso | Una sequenza con cancelli, che finisce in un verdetto dell'utente |
 
 ---
+*v1.2 — §8: ogni file da ritrovare ha la sua riga in «Dove trovi cosa» del `memory.md` del progetto (Regola 23).*
 *v1.1 — §1: `03_skills/` divisa in atomiche/flusso, e la distinzione progetto/skill come prima cosa da stabilire. §8: destinazioni per skill atomica, skill di flusso e connessioni esterne; l'idea su cui non si è ancora lavorato non prende una cartella. §9 riscritta da capo: la natura della skill si dichiara prima di scriverla, criterio d'ingresso, la descrizione come innesco, e il modello sorgente/copia gemella reso esplicito. Glossario esteso.*

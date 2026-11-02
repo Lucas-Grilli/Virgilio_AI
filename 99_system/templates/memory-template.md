@@ -8,6 +8,13 @@
 
 [Sezioni libere, specifiche del progetto — es. mercato/canale, pipeline, pattern operativi attivi. Quanto serve, non di più. Cancellare questo placeholder e scrivere le sezioni vere.]
 
+## Dove trovi cosa
+
+[Una riga per ogni file da ritrovare, raggruppata per tipo, col link e due parole su cos'è (Regola 23). Si aggiorna quando un file nasce, si sposta o si chiude.]
+
+- Bozze: [nome](percorso) — cos'è
+- Documenti e materiali: [nome](percorso) — cos'è
+
 ## Thread aperti
 
 - [ ] ...
