@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2563eb.svg" alt="Licenza MIT"></a>
-  <img src="https://img.shields.io/badge/versione-1.5-2563eb.svg" alt="Versione 1.5">
+  <img src="https://img.shields.io/badge/versione-1.6-2563eb.svg" alt="Versione 1.6">
   <img src="https://img.shields.io/badge/lingua-italiano-2563eb.svg" alt="In italiano">
 </p>
 

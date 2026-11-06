@@ -20,6 +20,10 @@
 |---|---|---|---|
 | `10_projects/<nome>` | | AAAA-MM-GG | |
 
+## Come lavorare con me
+
+Le correzioni dell'utente su come lavorare con lui, una regola per riga con la data (Regola 14).
+
 ## Thread Aperti
 
 - [ ]
